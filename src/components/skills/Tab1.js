@@ -95,7 +95,7 @@ const HeaderInput = styled.input`
 
 const TableInput = styled.input`
   width: 90%;
-  text-align: ${props => (props.center ? 'center' : 'right')};
+  text-align: ${props => props.textAlign};
   padding-right: 2px;
   outline: none;
   border: 1px solid ${palette.gray[6]};
@@ -210,7 +210,11 @@ function Tab1({
                 return (
                   <TableContent key={material.name}>
                     <div>
-                      <TableInput value={material.name} readOnly center />
+                      <TableInput
+                        value={material.name}
+                        readOnly
+                        textAlign="left"
+                      />
                     </div>
                     <div>
                       <TableInput
@@ -219,6 +223,7 @@ function Tab1({
                         data-itemname={item.itemName}
                         data-materialname={material.name}
                         name="price"
+                        textAlign="right"
                       />
                     </div>
                     <div>
@@ -228,22 +233,35 @@ function Tab1({
                         data-itemname={item.itemName}
                         data-materialname={material.name}
                         name="count"
+                        textAlign="right"
                       />
                     </div>
                     <div>
-                      <TableInput value={labor} readOnly />
+                      <TableInput value={labor} readOnly textAlign="right" />
                     </div>
                     <div>
-                      <TableInput value={manufactCount} readOnly />
+                      <TableInput
+                        value={manufactCount}
+                        readOnly
+                        textAlign="right"
+                      />
                     </div>
                     <div>
-                      <TableInput value={labor} readOnly />
+                      <TableInput value={labor} readOnly textAlign="right" />
                     </div>
                     <div>
-                      <TableInput value={sale.toFixed(4)} readOnly />
+                      <TableInput
+                        value={sale.toFixed(4)}
+                        readOnly
+                        textAlign="right"
+                      />
                     </div>
                     <div>
-                      <TableInput value={profit.toFixed(4)} readOnly />
+                      <TableInput
+                        value={profit.toFixed(4)}
+                        readOnly
+                        textAlign="right"
+                      />
                     </div>
                     <div>
                       <TableInput value={profitPer1000.toFixed(4)} readOnly />
