@@ -264,7 +264,11 @@ function Tab1({
                       />
                     </div>
                     <div>
-                      <TableInput value={profitPer1000.toFixed(4)} readOnly textAlign="right"/>
+                      <TableInput
+                        value={profitPer1000.toFixed(4)}
+                        readOnly
+                        textAlign="right"
+                      />
                     </div>
                   </TableContent>
                 );

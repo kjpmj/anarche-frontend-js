@@ -14,14 +14,14 @@ const SkillsPageBlock = styled(Responsive)``;
 const SkillsPageTabBlock = styled.div`
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 1348px;
+  width: 1548px;
   margin: 0 auto; /** 중앙 정렬 */
 
   /** 브라우저 크기에 따라 가로 크기 변경 */
-  @media (max-width: 1348px) {
-    width: 1024px;
+  @media (max-width: 1548px) {
+    width: 1224px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1224px) {
     width: 100%;
   }
 `;

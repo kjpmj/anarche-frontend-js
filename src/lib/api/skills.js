@@ -8,3 +8,6 @@ export const getItemPrice = ({ server, itemName }) =>
 
 export const getItemPriceTab1 = ({ server, itemName }) =>
   client.get(`/api/auction/tab1/${server}/${itemName}`);
+
+export const getItemPriceTab2 = ({ server, itemName }) =>
+  client.get(`/api/auction/tab2/${server}/${itemName}`);
